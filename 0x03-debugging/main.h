@@ -1,8 +1,22 @@
-#ifndef MAIN_H
-#define MAIN_H
-
 #include <stdio.h>
+#include "main.h"
 
-void positive_or_negative(int i);
+/**
+ * main - tests the largest_number function
+ * Return: 0
+ */
+int main(void)
+{
+    int a, b, c;
+    int largest;
 
-#endif /* MAIN_H */
+    a = 10;
+    b = -5;
+    c = 20;
+
+    largest = largest_number(a, b, c);
+
+    printf("%d is the largest number\n", largest);
+
+    return 0;
+}
